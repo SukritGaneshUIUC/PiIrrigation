@@ -1,0 +1,12 @@
+{
+    "stations": {
+        "12": {
+            "rain_sensing": false,
+            "rain_threshold": 0.1,
+            "schedule": [
+                {"day": "Saturday", "start": "19:06", "duration": 0.5},
+                {"day": "Sunday", "start": "20:00", "duration": 0.1}
+            ]
+        }
+    }
+}
