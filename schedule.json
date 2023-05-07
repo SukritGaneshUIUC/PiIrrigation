@@ -4,8 +4,52 @@
             "rain_sensing": false,
             "rain_threshold": 0.1,
             "schedule": [
-                {"day": "Saturday", "start": "19:06", "duration": 0.5},
-                {"day": "Sunday", "start": "20:00", "duration": 0.1}
+                {"day": "Saturday", "start": "23:56", "duration": 0.3},
+                {"day": "Sunday", "start": "00:01", "duration": 0.3},
+                {"day": "Sunday", "start": "00:05", "duration": 0.3},
+
+                {"day": "Tuesday", "start": "23:00", "duration": 10},
+                {"day": "Thursday", "start": "23:00", "duration": 10}
+
+            ]
+        },
+        "16": {
+            "rain_sensing": false,
+            "rain_threshold": 0.1,
+            "schedule": [
+                {"day": "Saturday", "start": "23:56", "duration": 0.3},
+                {"day": "Sunday", "start": "00:02", "duration": 0.3},
+                {"day": "Sunday", "start": "00:05", "duration": 0.4},
+
+                {"day": "Tuesday", "start": "23:00", "duration": 10},
+                {"day": "Thursday", "start": "23:00", "duration": 10}
+
+            ]
+        },
+        "20": {
+            "rain_sensing": false,
+            "rain_threshold": 0.1,
+            "schedule": [
+                {"day": "Saturday", "start": "23:56", "duration": 0.3},
+                {"day": "Sunday", "start": "00:01", "duration": 0.2},
+                {"day": "Sunday", "start": "00:05", "duration": 0.5},
+
+                {"day": "Tuesday", "start": "23:00", "duration": 10},
+                {"day": "Thursday", "start": "23:00", "duration": 10}
+
+            ]
+        },
+        "21": {
+            "rain_sensing": false,
+            "rain_threshold": 0.1,
+            "schedule": [
+                {"day": "Saturday", "start": "23:56", "duration": 0.3},
+                {"day": "Sunday", "start": "00:01", "duration": 0.2},
+                {"day": "Sunday", "start": "00:05", "duration": 0.5},
+
+                {"day": "Tuesday", "start": "23:00", "duration": 10},
+                {"day": "Thursday", "start": "23:00", "duration": 10}
+
             ]
         }
     }

@@ -174,7 +174,7 @@ def station_driver(pin_number, rain_sensing, rain_threshold, schedule, log_filep
                         # don't water, send email informing 
                         email_message = "Subject: PiIrrigation Watering CANCELLED Due to Rainfall\n\nValve " + str(pin_number) + " watering at " + start_time_str + " CANCELLED due to 24 hour rainfall of " + str(last_24_hours_hourly_rain) + " mm exceeding threshold of " + rain_threshold + " mm.\n"
                         send_email(email_message, email_address, password)
-                        time.sleep(20)  # sleep to ensure entire minute passes, and current watering time isn't activated again
+                        time.sleep(60)  # sleep to ensure entire minute passes, and current watering time isn't activated again
                         continue
 
                 # if the rain checks pass, then go ahead and water the plant
@@ -202,7 +202,7 @@ def main():
     # Create log file if it doesn't yet exist
     if (not os.path.exists(os.path.dirname(LOG_FILEPATH))):
         os.path.makedirs(os.path.dirname(LOG_FILEPATH))
-    with open(LOG_FILEPATH, "w") as f:
+    with open(LOG_FILEPATH, "a") as f:
         f.write("")
 
     log_lock = Lock()
